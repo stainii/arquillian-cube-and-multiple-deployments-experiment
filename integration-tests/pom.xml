@@ -104,10 +104,16 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <dependencies>
-                <dependency>
+                <!--<dependency>
                     <groupId>org.wildfly</groupId>
                     <artifactId>wildfly-arquillian-container-remote</artifactId>
                     <version>${version.org.wildfly}</version>
+                    <scope>test</scope>
+                </dependency>-->
+                <dependency>
+                    <groupId>org.arquillian.container</groupId>
+                    <artifactId>arquillian-container-chameleon</artifactId>
+                    <version>1.0.0.Beta3</version>
                     <scope>test</scope>
                 </dependency>
             </dependencies>
@@ -194,8 +200,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Arquillian cube -->
-        <!---->
 
     </dependencies>
 
